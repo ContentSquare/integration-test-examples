@@ -1,0 +1,23 @@
+<mat-dialog-content [formGroup]="form">
+    <mat-form-field>
+        <input matInput
+                    [placeholder]="todo.title != ''? todo.title: 'Todo Title'"
+                    formControlName="title">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <textarea matInput 
+                    [placeholder]="todo.description != ''? todo.description: 'Todo Description'"
+                    formControlName="description">
+        </textarea>
+    </mat-form-field>
+
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button mat-raised-button primary="primary" (click)="todo.title != '' ? save() : add()">Save</button>
+    <button mat-raised-button (click)="close()">Close</button>
+</mat-dialog-actions>
+
+

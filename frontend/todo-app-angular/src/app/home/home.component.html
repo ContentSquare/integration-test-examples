@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>All Todos</h3>
+   
+    <mat-tab-group>
+      <ng-container *ngIf="(incompletedTodos$ | async) as incompleteTodos">
+        <mat-tab label="Incompleted" *ngIf="incompleteTodos!.length > 0">
+          <app-todo-list [completed]="false">
+          </app-todo-list>
+        </mat-tab>
+      </ng-container>
+
+      <ng-container *ngIf="(completedTodos$ | async) as completeTodos">
+        <mat-tab label="Completed" *ngIf="completeTodos!.length > 0">
+          <app-todo-list  [completed]="true">
+          </app-todo-list>
+        </mat-tab>
+      </ng-container>
+
+    </mat-tab-group>
+    <footer>
+      <button (click)="addTodo()">
+        <img src="assets/add.png" class="icon">
+      </button>
+    </footer>
+</div>

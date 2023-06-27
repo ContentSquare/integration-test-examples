@@ -1,0 +1,17 @@
+.todo-card {
+    margin: 20px 10px;
+}
+
+.todo-title {
+    font-weight: bold;
+}
+
+.todo-actions {
+    display: flex;
+    justify-content: left;
+  }
+  
+.todo-actions button {
+    margin-right: 5px;
+}
+  

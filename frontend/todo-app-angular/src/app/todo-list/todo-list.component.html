@@ -1,0 +1,27 @@
+<mat-card *ngFor="let todo of todos$  | async" class="todo-card mat-elevation-z10">
+    <mat-card-header>
+        <mat-card-title class="todo-title">{{todo.title}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content style="white-space: pre-line">
+        <p>{{ todo.description }}</p>
+    </mat-card-content>
+
+    <mat-card-actions class="todo-actions">
+        <button mat-raised-button color="accent" (click)="removeTodo(todo)">
+            Remove
+        </button>
+
+        <button mat-raised-button color="accent" (click)="editTodo(todo)">
+            Edit
+        </button>
+
+        <button *ngIf="todo.completed" color="primary" (click)="toggleTodo(todo)">
+           Incomplete
+        </button>
+
+        <button *ngIf="!todo.completed" color="primary" (click)="toggleTodo(todo)">
+            Complete
+        </button>
+    </mat-card-actions>
+</mat-card>

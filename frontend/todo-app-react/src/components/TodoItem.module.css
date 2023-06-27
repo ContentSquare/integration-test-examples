@@ -1,0 +1,36 @@
+.container {
+    white-space: pre-line;
+    padding: 20px 10px 20px 0px;
+}
+
+.title {
+    align-items: center;
+}
+
+.titleText {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.descriptionText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.editButton {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.deleteButton {
+    color: red;
+}
+
+.editForm {
+    margin-top: 10px;
+}
+
+.saveButton {
+    margin-right: 10px;
+    margin-top: 10px;    
+}
