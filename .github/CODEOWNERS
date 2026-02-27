@@ -7,14 +7,8 @@
 # ==============
 # !!! Always keep it on the last lines of the CODEOWNERS file !!!
 
-# Makefile are called by Jenkinsfile and inherit their access
-Makefile* @ContentSquare/Platform
-
-# Dockerfile describes the images that will be put into production
-Dockerfile* @ContentSquare/Platform
-
 # .github controls CODEOWNERS and Github actions (not used at the moment)
-/.github/ @ContentSquare/Platform
+/.github/ @ContentSquare/devx
 
 # Protect .github/agents folder for GitHub Copilot agents
 /.github/agents/ @ContentSquare/tech-lead-qt
