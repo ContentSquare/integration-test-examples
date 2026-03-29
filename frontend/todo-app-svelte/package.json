@@ -31,7 +31,7 @@
     "vite": "^4.2.1"
   },
   "dependencies": {
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.31",
     "sirv-cli": "^2.0.0"
   }
 }
